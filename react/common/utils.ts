@@ -14,7 +14,7 @@ export function getFutureDateDifferenceMs(
 	const currentMonth = presentDate.getMonth();
 	const currentDay = presentDate.getDate();
 	const yearOffset =
-		currentMonth > futureMonth || currentDay > futureDay ? 1 : 0;
+		currentMonth > futureMonth || currentDay >= futureDay ? 1 : 0;
 	const futureYear = presentDate.getFullYear() + yearOffset;
 	const futureDateString = `${futureMonth}/${futureDay}/${futureYear}`;
 	const futureDateObject = new Date(futureDateString);
