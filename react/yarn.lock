@@ -6626,6 +6626,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bignumber.js@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "bignumber.js@npm:2.4.0"
+  checksum: 822c0318b8d077566f2ae1e3b3a78ebd0aa0a1f74a2dc4a5c0bab0fbcfc3e4af56489db814f64cdca973d4682468d99c251fe10dc81060225a1cfc19404a92c5
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -7526,6 +7533,13 @@ __metadata:
   version: 2.0.0
   resolution: "convert-source-map@npm:2.0.0"
   checksum: 63ae9933be5a2b8d4509daca5124e20c14d023c820258e484e32dc324d34c2754e71297c94a05784064ad27615037ef677e3f0c00469fb55f409d2bb21261035
+  languageName: node
+  linkType: hard
+
+"convert@npm:^4.13.1":
+  version: 4.13.1
+  resolution: "convert@npm:4.13.1"
+  checksum: cbed7f2d2f6c68ff1ac0a0e980a66ca922b0babbaaeed6e7cc9083d637d3720e5d879ef6e7b1bb342a212bada59a4bbdbe08d5d85eae9134f9b8b0fb5a4b0a4f
   languageName: node
   linkType: hard
 
@@ -15662,6 +15676,7 @@ __metadata:
     "@types/react-dom": 18.2.7
     autoprefixer: 10.4.14
     concurrently: ^8.2.0
+    convert: ^4.13.1
     eslint: 8.46.0
     eslint-config-next: 13.4.12
     eslint-plugin-storybook: ^0.6.13
@@ -15678,6 +15693,8 @@ __metadata:
     storybook: ^7.2.1
     storybook-test: ^0.1.8
     tailwindcss: 3.3.3
+    time-convert: ^0.0.2
+    to-time: ^1.0.2
     ts-jest: ^29.1.1
     typescript: 5.1.6
   languageName: unknown
@@ -16474,6 +16491,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"time-convert@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "time-convert@npm:0.0.2"
+  checksum: 587125f63be3e409ca0c243cd6a05c4a6c332dd8fa705e7396671154d101d174b549efc71a9b97ad504484795e91a242030a6c891c752fb2bce37559c32c89c5
+  languageName: node
+  linkType: hard
+
 "timers-browserify@npm:^2.0.12":
   version: 2.0.12
   resolution: "timers-browserify@npm:2.0.12"
@@ -16517,6 +16541,15 @@ __metadata:
   dependencies:
     is-number: ^7.0.0
   checksum: f76fa01b3d5be85db6a2a143e24df9f60dd047d151062d0ba3df62953f2f697b16fe5dad9b0ac6191c7efc7b1d9dcaa4b768174b7b29da89d4428e64bc0a20ed
+  languageName: node
+  linkType: hard
+
+"to-time@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "to-time@npm:1.0.2"
+  dependencies:
+    bignumber.js: ^2.4.0
+  checksum: fbe253a0bd57657dc5d5b74bb87ab871ebf8fb379ffbeb1609ba4d0410c7f46355820ac6faca1d06dfdace2b3b991ed1955b5eed3fa4b4963dd027c11d2f9371
   languageName: node
   linkType: hard
 

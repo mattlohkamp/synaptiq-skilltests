@@ -1,11 +1,8 @@
-import { ChangeEvent, ChangeEventHandler, useState } from "react";
-
-//	TODO: reference this union directly?
-type HTMLOptionElementValue = string | number | readonly string[] | undefined;
+import { ChangeEventHandler, OptionHTMLAttributes } from "react";
 
 export type DatePickerListOption = {
 	label: string;
-	value?: HTMLOptionElementValue;
+	value: OptionHTMLAttributes<HTMLOptionElement>["value"];
 };
 
 export default function DatePickerList({
@@ -24,18 +21,27 @@ export default function DatePickerList({
 		},
 	],
 	selectedIndex = 0,
+	labelText = undefined,
 	onChange = () => {},
-}: //	TODO: add an empty option config?
-{
+}: {
 	options?: DatePickerListOption[];
 	selectedIndex?: number;
 	onChange?: ChangeEventHandler<HTMLSelectElement>;
+	labelText?: string;
 }) {
 	return (
-		<select onChange={onChange} value={options[selectedIndex].value}>
-			{options.map(({ value, label }, i) => (
-				<option key={i} value={value} label={label} />
-			))}
-		</select>
+		<>
+			<label>
+				{labelText}
+				<select
+					onChange={onChange}
+					value={options[selectedIndex].value}
+					className="cursor-pointer min-w-content text-black">
+					{options.map(({ value, label }, i) => (
+						<option key={i} value={value} label={label} />
+					))}
+				</select>
+			</label>
+		</>
 	);
 }
