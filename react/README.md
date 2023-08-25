@@ -2,6 +2,8 @@
 
 ## Holiday Shopping Countdown
 
+![](https://y.yarn.co/026b65c5-9ada-46b8-b1ec-11135f7efe41_text.gif)
+
 ### New Feature Story:
 
 As a user I want to know how many days I have left to go shopping for presents for Mother's Day - I want to be able to choose from a list of predfined holiday dates, and be shown the number of days remaining before the next occurance.
@@ -14,7 +16,7 @@ The date picker itself follows [the "Date List" pattern in Polaris' Date Picking
 
 ## New Components
 
-_components are browed with `yarn storybook`_
+_components are browsed with `yarn storybook`_
 
 - `<DatePickerList />` - basically just a `<select />` and a collection of `<option />`s that fires an event when the user picks a new value
 
