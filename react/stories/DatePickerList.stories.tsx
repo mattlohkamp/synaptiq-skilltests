@@ -1,3 +1,4 @@
+import { ChangeEvent } from "react";
 import DatePickerList from "../components/DatePickerList";
 
 export default {
@@ -32,5 +33,12 @@ export const Customized = {
 				value: 3,
 			},
 		],
+		onChange: (e: ChangeEvent<HTMLSelectElement>) => {
+			const parsedValue = parseInt(
+				(e.nativeEvent.target as HTMLSelectElement).value
+			);
+			const value = Number.isNaN(parsedValue) ? 0 : parsedValue;
+			alert(`you picked option #${value}!`);
+		},
 	},
 };
