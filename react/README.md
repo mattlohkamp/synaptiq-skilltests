@@ -6,13 +6,13 @@
 
 ### New Feature Story:
 
-As a user I want to know how many days I have left to go shopping for presents for Mother's Day - I want to be able to choose from a list of predfined holiday dates, and be shown the number of days remaining before the next occurance.
+> As a user I want to know how many days I have left to go shopping for presents for a specific holiday e.g. Mother's Day: I want to be able to choose from a list of predfined holiday dates, and be shown the number of days remaining before the next occurance.
 
 The date picker itself follows [the "Date List" pattern in Polaris' Date Picking spec](https://polaris.shopify.com/patterns/date-picking/date-list) - the user selects a range of time between now, and the next occurance of a holiday date.
 
 ## New Dependencies
 
-- [convert](https://www.npmjs.com/package/convert) - convert between one unit and another, used here for `ms`->`days`
+- [convert](https://www.npmjs.com/package/convert) - convert between one unit and another, used here for `ms`➡`days`
 
 ## New Components
 
