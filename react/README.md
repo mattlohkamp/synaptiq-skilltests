@@ -6,7 +6,7 @@
 
 ### New Feature Story:
 
-> As a user I want to know how many days I have left to go shopping for presents for a specific holiday e.g. Mother's Day: I want to be able to choose from a list of predfined holiday dates, and be shown the number of days remaining before the next occurance.
+> As a user I want to know how many days I have left to go shopping for presents for a specific holiday e.g. Mother's Day: I want to be able to choose from a list of predefined holiday dates, and be shown the number of days remaining before the next occurrence.
 
 The date picker itself follows [the "Date List" pattern in Polaris' Date Picking spec](https://polaris.shopify.com/patterns/date-picking/date-list) - the user selects a range of time between now, and the next occurance of a holiday date.
 
