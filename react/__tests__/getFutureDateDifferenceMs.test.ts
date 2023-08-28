@@ -10,8 +10,13 @@ describe("getFutureDateDifferenceMs", () => {
 		);
 	});
 	test("should return 1 year when day provided is same as present day", () => {
-		expect(getFutureDateDifferenceMs("1/1", new Date("1/1/1111"))).toBe(
+		expect(getFutureDateDifferenceMs("10/10", new Date("10/10/1010"))).toBe(
 			convert(1, "year").to("ms")
+		);
+	});
+	test("should know how many days are between halloween and christmas", () => {
+		expect(getFutureDateDifferenceMs("12/25", new Date("10/31/1031"))).toBe(
+			convert(55, "days").to("ms")
 		);
 	});
 });
